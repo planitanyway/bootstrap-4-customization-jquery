@@ -11,17 +11,14 @@
         $('#new-buttons').addClass('show');
      })
 
-     $('button').click(function(){
-         $('#title').addClass('hide');
-     })
+     $('#get-started').click(function(){
+        $('#blue-block').removeClass('bg-primary');
+        $('#blue-content').removeClass('text-white');
+    })
 
-     $('#remove').click(function(){
-         $('#title').removeClass('red');
-     })
-
-     setTimeout(function(){
-         $('#title').addClass('red');
-     }, 2000);
+    setTimeout(function(){
+        $('#shop-button').fadeIn(5000);
+    })
 
     console.log('the whole page is loaded')
   })
